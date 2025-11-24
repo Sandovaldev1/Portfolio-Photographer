@@ -20,7 +20,7 @@
 .navbar {
     width: 100%;
     background-color: var(--secondary-color);
-    
+
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -279,11 +279,17 @@ footer {
 
 
 
+
 /* Para móviles */
 @media (max-width: 600px) {
     body {
         font-size: 14px;
     }
+
+    .info-contact-div .d-flex {
+        flex-wrap: wrap !important;
+    }
+
 
     .jumbotron .scroll-down {
         margin-top: 12rem;
