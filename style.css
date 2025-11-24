@@ -5,23 +5,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --primary-color: #030213;
+    --secondary-color: rgba(255, 255, 255, 0.877);
+    --accent-color: #f39c12;
+    --ulr-background-jumbotron: url("images/jumbotron-bg.jpg");
+    --font-size-text: 1.5rem;
+    --font-size-mobile: 20px;
+}
+
+
+
+
 .navbar {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.877) !important;
+    background-color: var(--secondary-color);
     position: fixed;
     top: 0;
     z-index: 1000;
 }
 
 .navbar .nav-item .nav-link {
-
     font-weight: lighter;
     font-size: 19px;
 }
 
 .jumbotron {
     position: relative;
-    background-image: url("images/jumbotron-bg.jpg");
+    background-image: var(--ulr-background-jumbotron);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -38,7 +49,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    /* ajusta el 0.4 para más o menos opacidad */
     z-index: 1;
 }
 
@@ -49,12 +59,11 @@
 }
 
 .jumbotron p {
-
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.2;
     color: white;
-    font-size: 1.5rem;
+    font-size: var(--font-size-text);
     margin-top: 2rem;
     margin-bottom: 5vh;
 }
@@ -79,7 +88,6 @@
     color: white;
     border: 2px solid white;
     border-radius: 10px;
-
     font-weight: bold;
 }
 
@@ -87,6 +95,10 @@
 .jumbotron>* {
     position: relative;
     z-index: 2;
+}
+
+.container-portfolio {
+    margin-bottom: 115px;
 }
 
 .container-portfolio h1 {
@@ -99,37 +111,43 @@
     margin: 0 auto;
     line-height: 1.5;
     color: #333;
-    font-size: 1.1rem;
+    font-size: var(--font-size-text);
 }
 
-
-.container-images .image-right img {
-    width: 500px;
-    height: 500px;
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 
-.container-images .image-left img {
-    width: 800px;
-    height: 1015px;
+.item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 2;
+    overflow: hidden;
+    border-radius: 16px;
 }
 
-.container-images .image-left-2 img {
-    width: 612px;
-    height: 382px;
+.item-large {
+    grid-column: span 1;
+    grid-row: span 3;
+    aspect-ratio: auto;
 }
 
-.container-images .image-right-2 img {
-    width: 612px;
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
 }
 
-.container-images img {
-    border-radius: 15px
-}
 
 /* Scroll down responsive */
 .scroll-down {
     position: absolute;
-    bottom: 2rem; /* Ajusta la distancia desde abajo */
+    bottom: 2rem;
+    /* Ajusta la distancia desde abajo */
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -167,6 +185,10 @@
     }
 }
 
+.about-section {
+    background-color: #d6d4d4;
+}
+
 .about-section .img-about img {
     width: 90%;
     border-radius: 15px;
@@ -181,16 +203,20 @@
 .about-section .about-text {
     text-align: left;
     color: #0c0c0c;
-    font-size: 20px;
+    font-size: var(--font-size-text);
     font-weight: 300;
     line-height: 1.6;
 }
 
-.container-services{
+.container-services {
     margin: 0 auto;
 }
 
-.my-proccess .circle-number{
+.services-section .service-detail {
+    font-size: var(--font-size-text) !important;
+}
+
+.my-proccess .circle-number {
     border-radius: 250px;
     padding: 20px;
     width: 60px;
@@ -200,7 +226,47 @@
     color: white;
 }
 
-footer{
+.my-proccess .text-proccess {
+    font-size: var(--font-size-text);
+}
+
+.btn {
+    background-color: #030213;
+}
+
+.btn-social {
+    background-color: #030213;
+    padding: 12px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 19px;
+}
+
+.metric-link {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.portfolio-link {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+footer {
     background-color: #030213;
 }
 
@@ -219,7 +285,6 @@ footer{
 
     .jumbotron .scroll-down {
         margin-top: 12rem;
-        /* ajusta según tu diseño */
     }
 
     .jumbotron .description-hero {
@@ -231,16 +296,114 @@ footer{
         margin-top: 8rem;
     }
 
-    .container-images .image-right img, .container-images .image-left img, .container-images .image-left-2 img, .container-images .image-right-2 img{
+    .container-images .image-right img, .container-images .image-left img, .container-images .image-left-2 img, .container-images .image-right-2 img {
         width: 100%;
         height: 350px;
-}
+    }
 
+    .social-links-div {
+        text-align: center;
+        margin: 0 auto !important;
+    }
+
+    .info-contact-div h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .container-portfolio p {
+        text-align: center;
+        font-size: var(--font-size-mobile);
+    }
+
+    .container-portfolio .container-images {
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item-large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .item {
+        aspect-ratio: auto;
+    }
+
+    .about-section .about-text {
+        text-align: center;
+        font-size: var(--font-size-mobile);
+    }
+
+    .metrics-row {
+        text-align: center;
+    }
+
+    .metric-link {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .services-section .service-detail {
+        font-size: var(--font-size-mobile) !important;
+    }
+
+    .services-section p {
+        font-size: var(--font-size-mobile);
+    }
+
+    .my-proccess .text-proccess {
+        font-size: var(--font-size-mobile);
+    }
+
+    footer p {
+        font-size: var(--font-size-mobile);
+    }
+}
 
 /* Para tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
     body {
         font-size: 16px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-large {
+        grid-column: span 2;
+    }
+
+    .about-section .img-about,
+    .about-section .col-md-6 {
+        text-align: center;
+    }
+
+    .about-section>.container>.row>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-section img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .metrics-row img {
+        width: 50px;
     }
 }
 
@@ -249,5 +412,4 @@ footer{
     body {
         font-size: 18px;
     }
-}
 }

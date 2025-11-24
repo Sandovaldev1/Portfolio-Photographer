@@ -8,6 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://i.pinimg.com/736x/f9/58/18/f95818f914844d2b1cf7a45b232061d1.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -35,9 +36,9 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
           </ul>
 
           <!-- Botón derecha -->
@@ -55,8 +56,8 @@
         photography. Let me
         tell your story through the lens.</p>
       <p class="lead">
-        <a class="btn btn1 btn-primary btn-lg" href="#" role="button">View Portfolio</a>
-        <a class="btn btn2 btn-primary btn-lg" href="#" role="button">Book Session</a>
+        <a class="btn btn1 btn-primary btn-lg" href="#Portfolio" role="button">View Portfolio</a>
+        <a class="btn btn2 btn-primary btn-lg" href="#Contact" role="button">Book Session</a>
       </p>
       <span class="scroll-down">Scroll to see more
         <span class="arrow"></span>
@@ -65,97 +66,114 @@
   </header>
 
   <!-- Portfolio Section -->
-  <div id="Portfolio" class="container-fluid">
-    <div class="container container-portfolio text-center my-5">
-      <h1>My Portfolio</h1>
-      <p>A collection of my finest work, showcasing different styles and moments that tell unique stories through
-        photography.</p>
-    </div>
-  </div>
-
-  <!-- Portfolio Images -->
-  <div class="container-fluid">
-    <div class="container container-images d-flex justify-content-center align-items-center my-5">
-      <div class="row g-3">
-        <div class="col-md-7 image-left">
-          <img
-            src="https://images.unsplash.com/photo-1629200108624-8abe3ef549e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcGhvdG9ncmFwaHklMjBiZWF1dGlmdWx8ZW58MXx8fHwxNzU4Njk0NTk1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            class="img-fluid" alt="Portfolio Image 1">
-        </div>
-        <div class="col-md-5 d-flex flex-column gap-3 image-right">
-          <img src="images/img-2.png" class="img-fluid" alt="Portfolio Image 2">
-          <img src="images/img-3.png" class="img-fluid" alt="Portfolio Image 3">
-        </div>
-        <div class="col-md-6 image-left-2">
-          <img src="images/img-4.png" class="img-fluid" alt="Portfolio Image 1">
-        </div>
-        <div class="col-md-6 image-right-2">
-          <img src="images/img-5.png" class="img-fluid" alt="Portfolio Image 1">
-        </div>
+  <section id="Portfolio" class="container-fluid">
+    <div class="container-fluid container-portfolio">
+      <div class="container text-center my-5">
+        <h1>My Portfolio</h1>
+        <p>A collection of my finest work, showcasing different styles and moments that tell unique stories through
+          photography.</p>
       </div>
-    </div>
-    <p class="text-center"><a class="text-decoration-none" href="">View Full Portfolio →</a></p>
-  </div>
 
-  <div class="container-fluid about-section">
-    <div class="container text-center my-5">
-      <div class="row">
-        <div class="col-md-6 img-about">
-          <img src="images/jumbotron-bg.jpg" alt="" srcset="" class="img-fluid mb-3">
-        </div>
-        <div class="col-md-6">
-          <h2>About Me</h2>
-          <p class="about-text">Hi, I'm Víctor Salinas, a passionate photographer based in San Francisco. For over
-            8 years, I've been
-            capturing life's most precious moments, turning fleeting instances into timeless memories.
 
-          <p class="about-text">
-            My journey began with a simple camera and an eye for beauty. Today, I specialize in creating authentic,
-            emotional photographs that tell your unique story. Whether it's your wedding day, a family portrait, or a
-            fashion shoot, I believe every image should evoke emotion.
-          </p>
-          <p class="about-text">
-            When I'm not behind the camera, you'll find me exploring new locations, studying light, and constantly
-            pushing the boundaries of my craft. I believe that great photography is about connection - between the
-            photographer, the subject, and the viewer.
-          </p>
-          <br>
+      <div class="container my-5">
+        <div class="portfolio-grid">
 
-          <!-- FILA DE MÉTRICAS -->
-          <div class="row text-center">
-            <div class="col-6 col-md-3">
-              <img src="images/camera.svg" alt="" class="mb-2" width="30">
-              <p class="fw-bold">10,000+</p>
-              <p>Photos Taken</p>
-            </div>
-            <div class="col-6 col-md-3">
-              <img src="images/customer.svg" alt="" class="mb-2" width="30">
-              <p class="fw-bold">500+</p>
-              <p>Happy Clients</p>
-            </div>
-            <div class="col-6 col-md-3">
-              <img src="images/awards.svg" alt="" class="mb-2" width="30">
-              <p class="fw-bold">25+</p>
-              <p>Awards Won</p>
-            </div>
-            <div class="col-6 col-md-3">
-              <img src="images/clock.svg" alt="" class="mb-2" width="30">
-              <p class="fw-bold">8+</p>
-              <p>Years Experience</p>
-            </div>
+          <div class="item item-large">
+            <img
+              src="https://images.unsplash.com/photo-1629200108624-8abe3ef549e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcGhvdG9ncmFwaHklMjBiZWF1dGlmdWx8ZW58MXx8fHwxNzU4Njk0NTk1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              alt="">
           </div>
-          <!-- FIN MÉTRICAS -->
-          <a class="text-decoration-none d-block mb-4" href="">Learn More →</a>
+
+          <div class="item">
+            <img src="images/img-2.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="images/img-3.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="images/img-4.png" alt="">
+          </div>
+
+          <div class="item">
+            <img src="images/img-5.png" alt="">
+          </div>
+
+        </div>
+
+        <p class="text-center mt-4">
+          <a class="text-decoration-none portfolio-link" href="#">View Full Portfolio →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="About" class="my-5 ">
+    <div class="about-section py-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 img-about">
+            <img src="images/jumbotron-bg.jpg" alt="" srcset="" class="img-fluid mb-3">
+          </div>
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <br>
+            <p class="about-text">Hi, I'm Víctor Salinas, a passionate photographer based in San Francisco. For over
+              8 years, I've been
+              capturing life's most precious moments, turning fleeting instances into timeless memories.
+
+            <p class="about-text">
+              My journey began with a simple camera and an eye for beauty. Today, I specialize in creating authentic,
+              emotional photographs that tell your unique story. Whether it's your wedding day, a family portrait, or a
+              fashion shoot, I believe every image should evoke emotion.
+            </p>
+            <p class="about-text">
+              When I'm not behind the camera, you'll find me exploring new locations, studying light, and constantly
+              pushing the boundaries of my craft. I believe that great photography is about connection - between the
+              photographer, the subject, and the viewer.
+            </p>
+            <br>
+
+            <!-- FILA DE MÉTRICAS -->
+            <div class="row text-center metrics-row">
+              <div class="col-6 col-md-3">
+                <img src="images/camera.svg" alt="" class="mb-2" width="30">
+                <p class="fw-bold">10,000+</p>
+                <p>Photos Taken</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <img src="images/customer.svg" alt="" class="mb-2" width="30">
+                <p class="fw-bold">500+</p>
+                <p>Happy Clients</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <img src="images/awards.svg" alt="" class="mb-2" width="30">
+                <p class="fw-bold">25+</p>
+                <p>Awards Won</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <img src="images/clock.svg" alt="" class="mb-2" width="30">
+                <p class="fw-bold">8+</p>
+                <p>Years Experience</p>
+              </div>
+            </div>
+            <!-- FIN MÉTRICAS -->
+            <a class="text-decoration-none d-block mb-4 metric-link" href="">Learn More →</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- Services -->
-  <section class="services-section container my-5 text-alingn-center">
+  <section id="Services" class="services-section container my-5 text-alingn-center">
     <div class="container  my-5">
       <h1 class="text-center mb-4">Services</h1>
-      <p class="text-center mb-5">Professional photography services tailored to capture your unique story with
+      <p class="text-center mb-5 service-detail">Professional photography services tailored to capture your unique story
+        with
         creativity,
         passion, and technical excellence.</p>
 
@@ -237,186 +255,192 @@
       </div>
     </div>
   </section>
+
   <!-- My Proccess section -->
-  <div class="container my-proccess">
-    <h1 class="text-center">My process</h1>
-    <p class="text-center">A seamless, professional experience from initial consultation to final delivery.</p>
-    <br>
-    <div class="row text-center">
-      <div class="col-6 col-md-3">
-        <div
-          class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
-          01</div>
-        <h4>Consultation</h4>
-        <p>We discuss your vision, style preferences, and specific requirements for your shoot.</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <div
-          class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
-          02</div>
-        <h4>Planning</h4>
-        <p>I handle location scouting, timeline creation, and all logistics to ensure a smooth experience.</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <div
-          class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
-          03</div>
-        <h4>Photography Session</h4>
-        <p>Professional photography session with expert direction and creative collaboration.</p>
-      </div>
-      <div class="col-6 col-md-3">
-        <div
-          class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
-          04</div>
-        <h4>Post-Production</h4>
-        <p>Careful editing and retouching to deliver stunning, gallery-ready images.</p>
+  <section id="MyProcess">
+    <div class="container my-proccess">
+      <h1 class="text-center">My process</h1>
+      <p class="text-center text-proccess">A seamless, professional experience from initial consultation to final
+        delivery.</p>
+      <br>
+      <div class="row text-center">
+        <div class="col-6 col-md-3">
+          <div
+            class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
+            01</div>
+          <h4>Consultation</h4>
+          <p>We discuss your vision, style preferences, and specific requirements for your shoot.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div
+            class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
+            02</div>
+          <h4>Planning</h4>
+          <p>I handle location scouting, timeline creation, and all logistics to ensure a smooth experience.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div
+            class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
+            03</div>
+          <h4>Photography Session</h4>
+          <p>Professional photography session with expert direction and creative collaboration.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div
+            class="text-primary-foreground rounded-full flex items-center justify-center mx-auto text-xl font-bold circle-number">
+            04</div>
+          <h4>Post-Production</h4>
+          <p>Careful editing and retouching to deliver stunning, gallery-ready images.</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
   <!-- Contact Section -->
-<section id="contact" class="py-5">
-  <div class="container">
+  <section id="Contact" class="py-5">
+    <div class="container">
 
-    <!-- Title -->
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold mb-3">Let's Create Together</h2>
-      <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
-        Ready to capture your special moments? Get in touch to discuss your photography needs 
-        and let's create something beautiful together.
-      </p>
-    </div>
-
-    <div class="row g-5">
-
-      <!-- Contact Information -->
-      <div class="col-12 col-lg-4">
-
-        <div class="d-flex flex-column gap-5">
-
-          <!-- Contact Info -->
-          <div>
-            <h3 class="fs-3 mb-4">Get in Touch</h3>
-
-            <div class="d-flex flex-column gap-3">
-
-              <div class="d-flex align-items-center gap-3">
-                <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
-                <div>
-                  <p class="fw-semibold m-0">Studio Location</p>
-                  <p class="text-muted m-0">San Francisco, CA</p>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center gap-3">
-                <i class="bi bi-telephone-fill text-primary fs-5"></i>
-                <div>
-                  <p class="fw-semibold m-0">Phone</p>
-                  <p class="text-muted m-0">+1 (555) 123-4567</p>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-center gap-3">
-                <i class="bi bi-envelope-fill text-primary fs-5"></i>
-                <div>
-                  <p class="fw-semibold m-0">Email</p>
-                  <p class="text-muted m-0">hello@alexandrachen.com</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Social Buttons -->
-          <div>
-            <h4 class="fs-5 mb-3">Follow My Work</h4>
-            <div class="d-flex gap-3">
-              <a class="btn btn-outline-secondary rounded-circle p-2" href="#">
-                <i class="bi bi-instagram"></i>
-              </a>
-              <a class="btn btn-outline-secondary rounded-circle p-2" href="#">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a class="btn btn-outline-secondary rounded-circle p-2" href="#">
-                <i class="bi bi-twitter"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Response Time -->
-          <div class="bg-light p-4 rounded">
-            <h5 class="fs-6 mb-2">Response Time</h5>
-            <p class="text-muted small m-0">
-              I typically respond to inquiries within 24 hours. For urgent requests, 
-              please call directly.
-            </p>
-          </div>
-
-        </div>
+      <!-- Title -->
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Let's Create Together</h2>
+        <p class="fs-5 text-muted mx-auto" style="max-width: 700px;">
+          Ready to capture your special moments? Get in touch to discuss your photography needs
+          and let's create something beautiful together.
+        </p>
       </div>
 
-      <!-- Contact Form -->
-      <div class="col-12 col-lg-8">
-        <div class="card shadow-sm">
-          <div class="card-body p-4">
+      <div class="row g-5">
 
-            <h4 class="fw-semibold mb-1">Send me a message</h4>
-            <p class="text-muted mb-4">
-              Tell me about your photography needs and I'll get back to you soon.
-            </p>
+        <!-- Contact Information -->
+        <div class="col-12 col-lg-4">
 
-            <form class="d-flex flex-column gap-4">
+          <div class="d-flex flex-column gap-5">
 
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="firstName" class="form-label">First Name</label>
-                  <input type="text" id="firstName" class="form-control" placeholder="John">
+            <!-- Contact Info -->
+            <div class="info-contact-div">
+              <h3 class="fs-3 mb-4">Get in Touch</h3>
+
+              <div class="d-flex flex-column gap-3">
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
+                  <div>
+                    <p class="fw-semibold m-0">Studio Location</p>
+                    <p class="text-muted m-0">San Francisco, CA</p>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <label for="lastName" class="form-label">Last Name</label>
-                  <input type="text" id="lastName" class="form-control" placeholder="Doe">
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-telephone-fill text-primary fs-5"></i>
+                  <div>
+                    <p class="fw-semibold m-0">Phone</p>
+                    <p class="text-muted m-0">+1 (555) 123-4567</p>
+                  </div>
                 </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-envelope-fill text-primary fs-5"></i>
+                  <div>
+                    <p class="fw-semibold m-0">Email</p>
+                    <p class="text-muted m-0">sandovaldev21@gmail.com</p>
+                  </div>
+                </div>
+
               </div>
+            </div>
 
-              <div>
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="john@example.com">
+            <!-- Social Buttons -->
+            <div class="social-links-div">
+              <h4 class="fs-5 mb-3">Follow My Work</h4>
+              <div class="d-flex gap-3">
+                <a class="btn-social" href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="btn-social" href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a class="btn-social" href="#">
+                  <i class="bi bi-twitter"></i>
+                </a>
               </div>
+            </div>
 
-              <div>
-                <label for="phone" class="form-label">Phone (Optional)</label>
-                <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 123-4567">
-              </div>
-
-              <div>
-                <label for="eventType" class="form-label">Event/Session Type</label>
-                <input type="text" id="eventType" class="form-control" placeholder="Wedding, Portrait, Corporate, etc.">
-              </div>
-
-              <div>
-                <label for="eventDate" class="form-label">Preferred Date</label>
-                <input type="date" id="eventDate" class="form-control">
-              </div>
-
-              <div>
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" class="form-control" rows="5" placeholder="Tell me about your photography needs, vision, and any specific requirements..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary w-100 py-2 fs-6">
-                Send Message
-              </button>
-
-            </form>
+            <!-- Response Time -->
+            <div class="bg-light p-4 rounded">
+              <h5 class="fs-6 mb-2">Response Time</h5>
+              <p class="text-muted small m-0">
+                I typically respond to inquiries within 24 hours. For urgent requests,
+                please call directly.
+              </p>
+            </div>
 
           </div>
         </div>
-      </div>
 
+        <!-- Contact Form -->
+        <div class="col-12 col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-body p-4">
+
+              <h4 class="fw-semibold mb-1">Send me a message</h4>
+              <p class="text-muted mb-4">
+                Tell me about your photography needs and I'll get back to you soon.
+              </p>
+
+              <form class="d-flex flex-column gap-4">
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" id="firstName" class="form-control" placeholder="John">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" placeholder="Doe">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="john@example.com">
+                </div>
+
+                <div>
+                  <label for="phone" class="form-label">Phone (Optional)</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 123-4567">
+                </div>
+
+                <div>
+                  <label for="eventType" class="form-label">Event/Session Type</label>
+                  <input type="text" id="eventType" class="form-control"
+                    placeholder="Wedding, Portrait, Corporate, etc.">
+                </div>
+
+                <div>
+                  <label for="eventDate" class="form-label">Preferred Date</label>
+                  <input type="date" id="eventDate" class="form-control">
+                </div>
+
+                <div>
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" class="form-control" rows="5"
+                    placeholder="Tell me about your photography needs, vision, and any specific requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 fs-6">
+                  Send Message
+                </button>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="text-white py-5">
     <div class="container">
@@ -425,7 +449,7 @@
 
         <!-- Brand -->
         <div class="col-12 col-md-6">
-          <h3 class="fw-bold mb-3">Alexandra Chen</h3>
+          <h3 class="fw-bold mb-3">Víctor Salinas</h3>
           <p class="opacity-75 mb-4">
             Professional photographer capturing life's beautiful moments with creativity,
             passion, and technical excellence. Based in San Francisco, serving clients worldwide.
@@ -442,11 +466,11 @@
         <div class="col-12 col-md-3">
           <h5 class="fw-semibold mb-3">Quick Links</h5>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
-            <li class="mb-2"><a href="#portfolio" class="text-white-50 text-decoration-none">Portfolio</a></li>
-            <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
-            <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">Services</a></li>
-            <li><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="#Portfolio" class="text-white-50 text-decoration-none">Portfolio</a></li>
+            <li class="mb-2"><a href="#About" class="text-white-50 text-decoration-none">About</a></li>
+            <li class="mb-2"><a href="#Services" class="text-white-50 text-decoration-none">Services</a></li>
+            <li><a href="#Contact" class="text-white-50 text-decoration-none">Contact</a></li>
           </ul>
         </div>
 
@@ -466,7 +490,7 @@
 
           <div class="d-flex align-items-center gap-2">
             <i class="bi bi-envelope-fill"></i>
-            <span class="text-white-50 small">hello@alexandrachen.com</span>
+            <span class="text-white-50 small">sandovaldev21@gmail.com</span>
           </div>
         </div>
 
@@ -476,7 +500,7 @@
 
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
         <p class="text-white-50 small mb-3 mb-md-0">
-          © 2025 Alexandra Chen Photography. All rights reserved.
+          © 2025 Víctor Salinas Photography. All rights reserved.
         </p>
 
         <div class="d-flex gap-4">
