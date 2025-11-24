@@ -20,6 +20,7 @@
 .navbar {
     width: 100%;
     background-color: var(--secondary-color);
+    
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -28,6 +29,7 @@
 .navbar .nav-item .nav-link {
     font-weight: lighter;
     font-size: 19px;
+    color: #000;
 }
 
 .jumbotron {
